@@ -28,23 +28,3 @@ public class OrdenaStringsComLambda {
 	}
 }
 
-/**
- * 
- * @author gustavo Criação de comparator por tamanho da String
- */
-class ComparadorDeStringPorTamanho implements Comparator<String> {
-
-	public int compare(String s1, String s2) {
-		if (s1.length() < s2.length())
-			return -1;
-		if (s1.length() > s2.length())
-			return 1;
-		return 0;
-	}
-}
-
-class ConsumidorDeString implements Consumer<String> {
-	public void accept(String s) {
-		System.out.println(s);
-	}
-}
